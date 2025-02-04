@@ -19,8 +19,8 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 obj_prime_filter = PrimeFilter(numbers)
 
-# Получаем список простых чисел
+# jai sandar tizimi
 prime_numbers = obj_prime_filter.filter_primes()
 
-# Выводим результат
+# res
 print("Простые числа:", prime_numbers)

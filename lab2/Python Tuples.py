@@ -26,3 +26,8 @@ tuple3 = (True, False, False)
 #A tuple with strings, integers and boolean values:
 
 tuple1 = ("abc", 34, True, 40, "male")
+
+#Using the tuple() method to make a tuple:
+
+thistuple = tuple(("apple", "banana", "cherry")) 
+print(thistuple)

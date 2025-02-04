@@ -4,5 +4,4 @@ def reverse_words():
     reversed_sentence = ' '.join(reversed(words))
     print(f"Перевернутое предложение: {reversed_sentence}")
 
-# Пример использования:
 reverse_words()

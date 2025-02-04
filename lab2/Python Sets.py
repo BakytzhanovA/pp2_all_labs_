@@ -24,3 +24,8 @@ print(thisset)
 thisset = {"apple", "banana", "cherry"}
 
 print(len(thisset))
+
+#Using the set() constructor to make a set:
+
+thisset = set(("apple", "banana", "cherry")) 
+print(thisset)
