@@ -24,8 +24,19 @@ def divisible_by_3_and_4(n):
 n = int(input("Введите число N: "))
 for num in divisible_by_3_and_4(n):
     print(num)
-
+    
 #4
+def squares(a, b):
+    for i in range(a, b + 1):
+        yield i ** 2
+
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
+for square in squares(a, b):
+    print(square)
+
+
+#5
 def all_nums(n):
     while n>=0:
         yield n
