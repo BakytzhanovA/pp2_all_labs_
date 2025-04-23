@@ -26,8 +26,8 @@ COINS = 0
 
 
 # Setting up Fonts
-font = pygame.font.SysFont("Verdana", 20)
-font_small = pygame.font.SysFont("Verdana", 20)
+font = pygame.font.SysFont("TimesRoman", 20)
+font_small = pygame.font.SysFont("TimesRoman", 20)
 game_over = font.render("Game Over", True, BLACK)
 
 background = pygame.image.load("AnimatedStreet.png")

@@ -1,4 +1,3 @@
-# Imports
 import pygame, sys
 from pygame.locals import *
 import random, time
@@ -7,7 +6,7 @@ import random, time
 pygame.init()
 
 # FPS
-FPS =60
+FPS = 60
 FramePerSec = pygame.time.Clock()
 
 # Creating colors

@@ -21,7 +21,10 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-
+    if ball_x == 500 or ball_y == 500:
+        ball_color = (255,0,255)
+        pygame.display.update()
+        
     keys = pygame.key.get_pressed()
     
     if keys[pygame.K_UP] and ball_y - ball_radius > 0:
@@ -33,7 +36,7 @@ while True:
     if keys[pygame.K_RIGHT] and ball_x + ball_radius < screen_width:
         ball_x += ball_speed
 
-    screen.fill((255, 255, 255))
+    screen.fill((255, 0 ,255))
 
     pygame.draw.circle(screen, ball_color, (ball_x, ball_y), ball_radius)
 

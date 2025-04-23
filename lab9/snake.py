@@ -25,6 +25,7 @@ class Snake:
         self.body = [(100, 100), (80, 100)]
         self.dx, self.dy = CELL_SIZE, 0 
         self.alive = True 
+        self.color = WHITE
 
     def move(self):
         if not self.alive:
@@ -42,7 +43,8 @@ class Snake:
         if new_head in self.body:
             self.alive = False
             return
-
+        
+                              
         self.body.insert(0, new_head)
         self.body.pop() 
 
@@ -52,6 +54,9 @@ class Snake:
     def draw(self):
         for segment in self.body:
             pygame.draw.rect(screen, GREEN, (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
+        if score >= 5:
+            pygame.draw.rect(screen, RED, (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
+            pygame.display.update()
 
 # Food class
 class Food:
